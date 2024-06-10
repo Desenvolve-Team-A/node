@@ -1,0 +1,105 @@
+{
+    "produto_grupo" : [
+        {
+            "id": 1,
+            "nome": "nome_produto_grupo_1",
+            "descricao": "descricao_produto_grupo_1"
+        },
+        {
+            "id": 2,
+            "nome": "nome_produto_grupo_2",
+            "descricao": "descricao_produto_grupo_2"
+        },
+        {
+            "id": 3,
+            "nome": "nome_produto_grupo_3",
+            "descricao": "descricao_produto_grupo_3"
+        }
+    ],
+    "produto_subgrupo" : [
+        {
+            "id": 1,
+            "id_produto_grupo": 1,
+            "nome": "nome_produto_subgrupo_1",
+            "descricao": "descricao_produto_subgrupo_1"
+        },
+        {
+            "id": 2,
+            "id_produto_grupo": 2,
+            "nome": "nome_produto_subgrupo_2",
+            "descricao": "descricao_produto_subgrupo_2"
+        },
+        {
+            "id": 3,
+            "id_produto_grupo": 3,
+            "nome": "nome_produto_subgrupo_3",
+            "descricao": "descricao_produto_subgrupo_3"
+        }
+    ],
+    "produto_unidade" : [
+        {
+            "id": 1,
+            "sigla": "sigla_produto_unidade_1",
+            "descricao": "descricao_produto_unidade_1"
+        },
+        {
+            "id": 2,
+            "sigla": "sigla_produto_unidade_2",
+            "descricao": "descricao_produto_unidade_2"
+        },
+        {
+            "id": 3,
+            "sigla": "sigla_produto_unidade_3",
+            "descricao": "descricao_produto_unidade_3"
+        }
+    ],
+    "produto_marca" : [
+        {
+            "id": 1,
+            "nome": "nome_produto_marca_1",
+            "descricao": "descricao_produto_marca_1"
+        },
+        {
+            "id": 2,
+            "nome": "nome_produto_marca_2",
+            "descricao": "descricao_produto_marca_2"
+        },
+        {
+            "id": 3,
+            "nome": "nome_produto_marca_3",
+            "descricao": "descricao_produto_marca_3"
+        }
+    ],
+    "produto": [
+        {
+            "id": 1,
+            "id_produto_subgrupo": 1,
+            "id_produto_marca": 1,
+            "id_produto_unidade": 1,
+            "nome": "nome_produto_1",
+            "gtin": "gtin_produto_1",
+            "valor": 0.01,
+            "data_cadastro": "2024-06-11"
+        },
+        {
+            "id": 2,
+            "id_produto_subgrupo": 2,
+            "id_produto_marca": 2,
+            "id_produto_unidade": 2,
+            "nome": "nome_produto_2",
+            "gtin": "gtin_produto_2",
+            "valor": 0.02,
+            "data_cadastro": "2024-06-12"
+        },
+        {
+            "id": 3,
+            "id_produto_subgrupo": 3,
+            "id_produto_marca": 3,
+            "id_produto_unidade": 3,
+            "nome": "nome_produto_3",
+            "gtin": "gtin_produto_3",
+            "valor": 0.03,
+            "data_cadastro": "2024-06-13"
+        }
+    ]
+}
