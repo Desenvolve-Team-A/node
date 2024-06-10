@@ -52,7 +52,7 @@ app.delete('/cars/:id', (req, res) => {
         res.status(404).send('Carro não encontrado');
     }
 });
-// Inicializa o servidor
+
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 }); 

@@ -1,0 +1,269 @@
+{
+    "carro_grupo" : [
+        {
+            "id": 1,
+            "nome": "SUV",
+            "descricao": "Veículos utilitários esportivos"
+        },
+        {
+            "id": 2,
+            "nome": "Sedan",
+            "descricao": "Veículos de passeio com três volumes"
+        },
+        {
+            "id": 3,
+            "nome": "Hatchback",
+            "descricao": "Veículos com porta-malas integrado"
+        }
+    ],
+
+    "carro_subgrupo" : [
+        {
+            "id": 1,
+            "id_carro_grupo": 1,
+            "nome": "Compact SUV",
+            "descricao": "SUVs de menor porte"
+        },
+        {
+            "id": 2,
+            "id_carro_grupo": 2,
+            "nome": "Luxury Sedan",
+            "descricao": "Sedans de luxo"
+        },
+        {
+            "id": 3,
+            "id_carro_grupo": 3,
+            "nome": "Compact Hatchback",
+            "descricao": "Hatchbacks compactos"
+        }
+    ],
+
+    "carro_unidade" : [
+        {
+            "id": 1,
+            "sigla": "ECO",
+            "descricao": "Elétrico"
+        },
+        {
+            "id": 2,
+            "sigla": "DIE",
+            "descricao": "Diesel"
+        },
+        {
+            "id": 3,
+            "sigla": "HIB",
+            "descricao": "Híbrido"
+        },
+        {
+            "id": 4,
+            "sigla": "FLE",
+            "descricao": "Gasolina/Alcool"
+        },
+        {
+            "id": 5,
+            "sigla": "GAS",
+            "descricao": "Gasolina"
+        }
+    ],
+    
+    "carro_marca" : [
+        {
+            "id": 1,
+            "nome": "Toyota",
+            "descricao": "Fabricante japonesa de automóveis"
+        },
+        {
+            "id": 2,
+            "nome": "BMW",
+            "descricao": "Fabricante alemã de automóveis"
+        },
+        {
+            "id": 3,
+            "nome": "Ford",
+            "descricao": "Fabricante americana de automóveis"
+        }
+    ],
+
+    "carro": [
+        {
+            "id": 1,
+            "id_carro_subgrupo": 1,
+            "id_carro_marca": 1,
+            "id_carro_unidade": 2,
+            "nome": "Toyota Hillux",
+            "gtin": "gtin_carro_1",
+            "valor": 30000.00,
+            "data_cadastro": "2024-06-11"
+        },
+        {
+            "id": 2,
+            "id_carro_subgrupo": 2,
+            "id_carro_marca": 2,
+            "id_carro_unidade": 5,
+            "nome": "BMW Série 5",
+            "gtin": "gtin_carro_2",
+            "valor": 55000.00,
+            "data_cadastro": "2024-06-12"
+        },
+        {
+            "id": 3,
+            "id_carro_subgrupo": 3,
+            "id_carro_marca": 3,
+            "id_carro_unidade": 4,
+            "nome": "Ford Focus",
+            "gtin": "gtin_carro_3",
+            "valor": 20000.00,
+            "data_cadastro": "2024-06-13"
+        },
+        {
+            "id": 4,
+            "id_carro_subgrupo": 1,
+            "id_carro_marca": 2,
+            "id_carro_unidade": 3,
+            "nome": "BMW X1",
+            "gtin": "gtin_carro_4",
+            "valor": 35000.00,
+            "data_cadastro": "2024-06-14"
+        },
+        {
+            "id": 5,
+            "id_carro_subgrupo": 2,
+            "id_carro_marca": 1,
+            "id_carro_unidade": 1,
+            "nome": "Toyota Camry",
+            "gtin": "gtin_carro_5",
+            "valor": 40000.00,
+            "data_cadastro": "2024-06-15"
+        },
+        {
+            "id": 6,
+            "id_carro_subgrupo": 3,
+            "id_carro_marca": 3,
+            "id_carro_unidade": 5,
+            "nome": "Ford Fiesta",
+            "gtin": "gtin_carro_6",
+            "valor": 18000.00,
+            "data_cadastro": "2024-06-16"
+        },
+        {
+            "id": 7,
+            "id_carro_subgrupo": 1,
+            "id_carro_marca": 1,
+            "id_carro_unidade": 2,
+            "nome": "Toyota Land Cruiser",
+            "gtin": "gtin_carro_7",
+            "valor": 65000.00,
+            "data_cadastro": "2024-06-17"
+        },
+        {
+            "id": 8,
+            "id_carro_subgrupo": 2,
+            "id_carro_marca": 2,
+            "id_carro_unidade": 5,
+            "nome": "BMW Série 7",
+            "gtin": "gtin_carro_8",
+            "valor": 80000.00,
+            "data_cadastro": "2024-06-18"
+        },
+        {
+            "id": 9,
+            "id_carro_subgrupo": 3,
+            "id_carro_marca": 3,
+            "id_carro_unidade": 4,
+            "nome": "Ford Ka",
+            "gtin": "gtin_carro_9",
+            "valor": 15000.00,
+            "data_cadastro": "2024-06-19"
+        },
+        {
+            "id": 10,
+            "id_carro_subgrupo": 1,
+            "id_carro_marca": 1,
+            "id_carro_unidade": 3,
+            "nome": "Toyota C-HR",
+            "gtin": "gtin_carro_10",
+            "valor": 32000.00,
+            "data_cadastro": "2024-06-20"
+        },
+        {
+            "id": 11,
+            "id_carro_subgrupo": 2,
+            "id_carro_marca": 2,
+            "id_carro_unidade": 1,
+            "nome": "BMW i8",
+            "gtin": "gtin_carro_11",
+            "valor": 120000.00,
+            "data_cadastro": "2024-06-21"
+        },
+        {
+            "id": 12,
+            "id_carro_subgrupo": 3,
+            "id_carro_marca": 3,
+            "id_carro_unidade": 5,
+            "nome": "Ford Puma",
+            "gtin": "gtin_carro_12",
+            "valor": 25000.00,
+            "data_cadastro": "2024-06-22"
+        },
+        {
+            "id": 13,
+            "id_carro_subgrupo": 1,
+            "id_carro_marca": 2,
+            "id_carro_unidade": 4,
+            "nome": "BMW X3",
+            "gtin": "gtin_carro_13",
+            "valor": 45000.00,
+            "data_cadastro": "2024-06-23"
+        },
+        {
+            "id": 14,
+            "id_carro_subgrupo": 2,
+            "id_carro_marca": 1,
+            "id_carro_unidade": 2,
+            "nome": "Toyota Avalon",
+            "gtin": "gtin_carro_14",
+            "valor": 42000.00,
+            "data_cadastro": "2024-06-24"
+        },
+        {
+            "id": 15,
+            "id_carro_subgrupo": 3,
+            "id_carro_marca": 3,
+            "id_carro_unidade": 3,
+            "nome": "Ford Escort",
+            "gtin": "gtin_carro_15",
+            "valor": 16000.00,
+            "data_cadastro": "2024-06-25"
+        },
+        {
+            "id": 16,
+            "id_carro_subgrupo": 1,
+            "id_carro_marca": 1,
+            "id_carro_unidade": 5,
+            "nome": "Toyota Highlander",
+            "gtin": "gtin_carro_16",
+            "valor": 48000.00,
+            "data_cadastro": "2024-06-26"
+        },
+        {
+            "id": 17,
+            "id_carro_subgrupo": 2,
+            "id_carro_marca": 2,
+            "id_carro_unidade": 3,
+            "nome": "BMW Série 3",
+            "gtin": "gtin_carro_17",
+            "valor": 37000.00,
+            "data_cadastro": "2024-06-27"
+        },
+        {
+            "id": 18,
+            "id_carro_subgrupo": 3,
+            "id_carro_marca": 3,
+            "id_carro_unidade": 4,
+            "nome": "Ford Focus RS",
+            "gtin": "gtin_carro_18",
+            "valor": 28000.00,
+            "data_cadastro": "2024-06-28"
+        }
+    ]
+}
