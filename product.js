@@ -33,6 +33,7 @@ app.post('/product', (req, res) => {
     const marcaExists = database.produtoMarca.some(marca => marca.id === newProduct.idProdutoMarca);
     const unidadeExists = database.produtoUnidade.some(unidade => unidade.id === newProduct.idProdutoUnidade);
 
+    // verifica se chaves estrangeiras existem
     if (!subgrupoExists) {
         return res.status(400).send({ error: 'Subgrupo informado não existe' });
     }
@@ -43,6 +44,37 @@ app.post('/product', (req, res) => {
 
     if (!unidadeExists) {
         return res.status(400).send({ error: 'Unidade informada não existe' });
+    }
+
+    // verifica se campos de produto não foram informados
+    if (newProduct.nome == null) {
+        return res.status(400).send({ error: 'Nome não informado' });
+    }
+
+    if (newProduct.gtin == null) {
+        return res.status(400).send({ error: 'Código gtin não informado' });
+    }
+
+    if (newProduct.valor == null) {
+        return res.status(400).send({ error: 'Valor não informado' });
+    }
+
+    if (newProduct.dataCadastro == null) {
+        return res.status(400).send({ error: 'Data do cadastro não informado' });
+    }
+
+    //validação dos campos do produto
+    if (newProduct.nome.length == 0) {
+        return res.status(400).send({ error: 'Nome não pode ser vazio' });
+    }
+    if (newProduct.gtin.length == 0) {
+        return res.status(400).send({ error: 'Código gtin não pode ser vazio' });
+    }
+    if (newProduct.valor.length == 0) {
+        return res.status(400).send({ error: 'Valor não pode ser vazio' });
+    }
+    if (newProduct.cadaCadastro.length == 0) {
+        return res.status(400).send({ error: 'DataCadstro não pode ser vazio' });
     }
 
     newProduct.id = idProduct += 1;
@@ -59,6 +91,7 @@ app.put('/product/:id', (req, res) => {
     const marcaExists = database.produtoMarca.some(marca => marca.id === updateProduct.idProdutoMarca);
     const unidadeExists = database.produtoUnidade.some(unidade => unidade.id === updateProduct.idProdutoUnidade);
 
+    // verifica se chaves estrangeiras existem
     if (!subgrupoExists) {
         return res.status(400).send({ error: 'Subgrupo informado não existe' });
     }
@@ -70,6 +103,39 @@ app.put('/product/:id', (req, res) => {
     if (!unidadeExists) {
         return res.status(400).send({ error: 'Unidade informada não existe' });
     }
+
+    // verifica se campos de produto não foram informados
+    if (newProduct.nome == null) {
+        return res.status(400).send({ error: 'Nome não informado' });
+    }
+
+    if (newProduct.gtin == null) {
+        return res.status(400).send({ error: 'Código gtin não informado' });
+    }
+
+    if (newProduct.valor == null) {
+        return res.status(400).send({ error: 'Valor não informado' });
+    }
+
+    if (newProduct.dataCadastro == null) {
+        return res.status(400).send({ error: 'Data do cadastro não informado' });
+    }
+
+    //validação dos campos do produto
+    if (newProduct.nome.length == 0) {
+        return res.status(400).send({ error: 'Nome não pode ser vazio' });
+    }
+    if (newProduct.gtin.length == 0) {
+        return res.status(400).send({ error: 'Código gtin não pode ser vazio' });
+    }
+    if (newProduct.valor.length == 0) {
+        return res.status(400).send({ error: 'Valor não pode ser vazio' });
+    }
+    if (newProduct.cadaCadastro.length == 0) {
+        return res.status(400).send({ error: 'DataCadstro não pode ser vazio' });
+    }
+
+
     if (index !== -1) {
         database.produto[index] = { ...database.produto[index], ...updateProduct };
         res.json(database[index]);
