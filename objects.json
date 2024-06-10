@@ -79,7 +79,7 @@
             "nome": "nome_produto_1",
             "gtin": "gtin_produto_1",
             "valor": 0.01,
-            "data_cadastro": "2024-06-11"
+            "dataCadastro": "2024-06-11"
         },
         {
             "id": 2,
@@ -89,7 +89,7 @@
             "nome": "nome_produto_2",
             "gtin": "gtin_produto_2",
             "valor": 0.02,
-            "data_cadastro": "2024-06-12"
+            "dataCadastro": "2024-06-12"
         },
         {
             "id": 3,
@@ -99,7 +99,7 @@
             "nome": "nome_produto_3",
             "gtin": "gtin_produto_3",
             "valor": 0.03,
-            "data_cadastro": "2024-06-13"
+            "dataCadastro": "2024-06-13"
         }
     ]
 }
