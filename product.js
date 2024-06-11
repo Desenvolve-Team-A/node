@@ -19,7 +19,7 @@ app.get('/product', (req, res) => {
 
 app.get('/product/:id', (req, res) => {
     const productId = parseInt(req.params.id);
-    const product = database.find(car => car.id === productId);
+    const product = database.find(product => product.id === productId);
     if (product) {
         res.json(database);
     } else {
@@ -73,8 +73,8 @@ app.post('/product', (req, res) => {
     if (newProduct.valor.length == 0) {
         return res.status(400).send({ error: 'Valor não pode ser vazio' });
     }
-    if (newProduct.cadaCadastro.length == 0) {
-        return res.status(400).send({ error: 'DataCadstro não pode ser vazio' });
+    if (newProduct.dataCadastro.length == 0) {
+        return res.status(400).send({ error: 'DataCadastro não pode ser vazio' });
     }
 
     newProduct.id = idProduct += 1;
@@ -105,33 +105,33 @@ app.put('/product/:id', (req, res) => {
     }
 
     // verifica se campos de produto não foram informados
-    if (newProduct.nome == null) {
+    if (updateProduct.nome == null) {
         return res.status(400).send({ error: 'Nome não informado' });
     }
 
-    if (newProduct.gtin == null) {
+    if (updateProduct.gtin == null) {
         return res.status(400).send({ error: 'Código gtin não informado' });
     }
 
-    if (newProduct.valor == null) {
+    if (updateProduct.valor == null) {
         return res.status(400).send({ error: 'Valor não informado' });
     }
 
-    if (newProduct.dataCadastro == null) {
+    if (updateProduct.dataCadastro == null) {
         return res.status(400).send({ error: 'Data do cadastro não informado' });
     }
 
     //validação dos campos do produto
-    if (newProduct.nome.length == 0) {
+    if (updateProduct.nome.length == 0) {
         return res.status(400).send({ error: 'Nome não pode ser vazio' });
     }
-    if (newProduct.gtin.length == 0) {
+    if (updateProduct.gtin.length == 0) {
         return res.status(400).send({ error: 'Código gtin não pode ser vazio' });
     }
-    if (newProduct.valor.length == 0) {
+    if (updateProduct.valor.length == 0) {
         return res.status(400).send({ error: 'Valor não pode ser vazio' });
     }
-    if (newProduct.cadaCadastro.length == 0) {
+    if (updateProduct.dataCadastro.length == 0) {
         return res.status(400).send({ error: 'DataCadstro não pode ser vazio' });
     }
 
